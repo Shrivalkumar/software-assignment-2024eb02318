@@ -1,0 +1,77 @@
+Git Commands Used in This Assignment
+====================================
+
+1. git init -b main
+   Initialized a new local Git repository and named the first branch main.
+
+2. git add index.html about.html
+   Added the two initial website files to Git's staging area.
+
+3. git commit -m "Initial project setup"
+   Recorded the first version of the project in the repository history.
+
+4. git add index.html
+   Staged the updated homepage before making the second commit.
+
+5. git commit -m "Expand homepage introduction"
+   Saved the homepage text change as a separate commit.
+
+6. git branch feature
+   Created a new branch named feature from the current main branch.
+
+7. git switch feature
+   Changed the working branch from main to feature.
+
+8. git add about.html
+   Staged the changes made to the About page on the feature branch.
+
+9. git commit -m "Add project workflow details"
+   Recorded the feature-branch work as its own commit.
+
+10. git switch main
+    Returned to the main branch before merging the completed feature.
+
+11. git merge --no-ff feature -m "Merge feature branch"
+    Merged feature into main and kept an explicit merge commit so the branch activity remains visible.
+
+12. git add .gitignore
+    Staged the ignore rules for log files and the temp directory.
+
+13. git commit -m "Configure ignored logs and temporary files"
+    Recorded the .gitignore configuration in the repository history.
+
+14. git status --short --ignored
+    Displayed the repository state, including the ignored debug.log file and temp directory.
+
+15. git add index.html
+    Staged an additional draft footer change for the undo demonstration.
+
+16. git commit -m "Add draft deployment note"
+    Created the additional commit required before performing the undo operation.
+
+17. git revert --no-edit HEAD
+    Undid the last commit safely by creating a new reversal commit and preserving the full history.
+
+18. git log --graph --oneline --decorate --all
+    Displayed a concise commit graph showing the main branch, feature branch, merge, and revert.
+
+19. git add git_commands.txt
+    Staged this command documentation file so it is included in the repository.
+
+20. git commit -m "Document Git commands used"
+    Recorded the command documentation as the final local content commit.
+
+21. git remote add origin https://github.com/Shrivalkumar/software-assignment-2024eb02318.git
+    Connected the local repository to the new public GitHub repository named origin.
+
+22. git push -u origin main
+    Uploaded the complete main branch and set origin/main as its upstream branch.
+
+23. git push origin feature
+    Uploaded the feature branch so its branch activity is also visible on GitHub.
+
+24. git remote -v
+    Displayed the configured fetch and push addresses for the GitHub remote.
+
+25. git status
+    Confirmed that the working tree was clean and synchronized after the push.
